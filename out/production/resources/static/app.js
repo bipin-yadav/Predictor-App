@@ -15,6 +15,12 @@
                 controllerAs: 'vm'
             })
 
+            .when('/result', {
+                controller: 'ResultController',
+                templateUrl: 'result/result.view.html',
+                controllerAs: 'vm'
+            })
+
             .when('/login', {
                 controller: 'LoginController',
                 templateUrl: 'login/login.view.html',

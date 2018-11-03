@@ -13,7 +13,7 @@ public class UserPrediction implements Serializable {
   private static final long serialVersionUID = -3009157732242241613L;
 
   @Id
-  private long userName;
+  private String username;;
 
   private String date;
 

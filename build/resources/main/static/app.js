@@ -15,6 +15,12 @@
                 controllerAs: 'vm'
             })
 
+            .when('/result', {
+                controller: 'ResultController',
+                templateUrl: 'result/result.view.html',
+                controllerAs: 'vm'
+            })
+
             .when('/login', {
                 controller: 'LoginController',
                 templateUrl: 'login/login.view.html',
@@ -33,7 +39,7 @@
                 controllerAs: 'vm'
             })
 
-            .otherwise({ redirectTo: '/login' });
+            .otherwise({ redirectTo: '/' });
     }
 
     run.$inject = ['$rootScope', '$location', '$cookies', '$http'];
@@ -46,7 +52,10 @@
 
         $rootScope.$on('$locationChangeStart', function (event, next, current) {
             // redirect to login page if not logged in and trying to access a restricted page
+
             var restrictedPage = $.inArray($location.path(), ['/login', '/register']) === -1;
+            //console.log($location.path());
+            //console.log(restrictedPage);
             var loggedIn = $rootScope.globals.currentUser;
             if (restrictedPage && !loggedIn) {
                 $location.path('/login');

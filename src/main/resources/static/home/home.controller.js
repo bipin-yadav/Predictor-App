@@ -5,34 +5,50 @@
         .module('app')
         .controller('HomeController', HomeController);
 
-    HomeController.$inject = ['UserService', '$location', '$rootScope', 'FlashService'];
-    function HomeController(UserService, $location, $rootScope, FlashService) {
+    HomeController.$inject = ['UserService', '$location', '$rootScope', 'FlashService', '$scope'];
+    function HomeController(UserService, $location, $rootScope, FlashService, $scope) {
         var vm = this;
 
-        vm.user = null;
+        $scope.user = null;
+        $scope.username = null;
+        $scope.attempt = 0;
+        $scope.fixedPrediction = null;
         vm.updateValue = updateValue;
-
 
         initController();
 
         function initController() {
             loadCurrentUser();
+            loadFixedPrediction();
+        }
+
+        function loadFixedPrediction() {
+            UserService.GetFixedPredictionsByDate("17")
+                .then(function (fixedPrediction) {
+                    console.log(fixedPrediction);
+                    $scope.fixedPrediction = fixedPrediction;
+                });
         }
 
         function loadCurrentUser() {
-            UserService.GetByUsername($rootScope.globals.currentUser.username)
+            UserService.GetUserPredictionsByUserName($rootScope.globals.currentUser.username)
                 .then(function (user) {
-                    //console.log(user);
-                    vm.user = user;
+                    console.log(user);
+                    $scope.user = user;
+                    $scope.username = $rootScope.globals.currentUser.username;
+                    $scope.attempt = user.attempt;
                 });
         }
 
         function updateValue() {
             vm.dataLoading = true;
-            //console.log(vm.user);
-            UserService.UpdateValue(vm.user)
+            vm.user.username = $rootScope.globals.currentUser.username;
+            vm.user.date = $scope.fixedPrediction.date;
+            vm.user.value = vm.user.myValue;
+            console.log(vm.user);
+            UserService.CreateUserPredictions(vm.user)
             .then(function (response) {
-            console.log(response);
+            //console.log(response);
                     if (response.success) {
                         FlashService.Success('Update successful', true);
                         $location.path('/');

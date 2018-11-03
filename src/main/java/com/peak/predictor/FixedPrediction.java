@@ -11,8 +11,6 @@ public class FixedPrediction implements Serializable {
   private static final long serialVersionUID = -3009157732242241634L;
 
   @Id
-  long id;
-
   private String date;
 
   private String value;

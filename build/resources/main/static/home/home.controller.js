@@ -5,41 +5,44 @@
         .module('app')
         .controller('HomeController', HomeController);
 
-    HomeController.$inject = ['UserService', '$rootScope'];
-    function HomeController(UserService, $rootScope) {
+    HomeController.$inject = ['UserService', '$location', '$rootScope', 'FlashService'];
+    function HomeController(UserService, $location, $rootScope, FlashService) {
         var vm = this;
 
         vm.user = null;
-        vm.allUsers = [];
-        vm.deleteUser = deleteUser;
+        vm.updateValue = updateValue;
+
 
         initController();
 
         function initController() {
             loadCurrentUser();
-            loadAllUsers();
         }
 
         function loadCurrentUser() {
             UserService.GetByUsername($rootScope.globals.currentUser.username)
                 .then(function (user) {
+                    //console.log(user);
                     vm.user = user;
                 });
         }
 
-        function loadAllUsers() {
-            UserService.GetAll()
-                .then(function (users) {
-                    vm.allUsers = users;
+        function updateValue() {
+            vm.dataLoading = true;
+            //console.log(vm.user);
+            UserService.UpdateValue(vm.user)
+            .then(function (response) {
+            console.log(response);
+                    if (response.success) {
+                        FlashService.Success('Update successful', true);
+                        $location.path('/');
+                    } else {
+                        FlashService.Error(response.message);
+                        vm.dataLoading = false;
+                    }
                 });
         }
 
-        function deleteUser(id) {
-            UserService.Delete(id)
-            .then(function () {
-                loadAllUsers();
-            });
-        }
     }
 
 })();

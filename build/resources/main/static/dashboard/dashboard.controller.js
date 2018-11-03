@@ -5,9 +5,16 @@
         .module('app')
         .controller('DashboardController', DashboardController);
 
-    DashboardController.$inject = ['UserService', '$rootScope'];
-    function DashboardController(UserService, $rootScope) {
-        console.log("load data here, for the day.");
+    DashboardController.$inject = ['$rootScope'];
+    function DashboardController($rootScope) {
+            var vm = this;
+
+            initController();
+
+            function initController() {
+               console.log("load data here, for the day.");
+            }
+
     }
 
 })();

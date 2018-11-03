@@ -13,7 +13,11 @@
 
         function register() {
             vm.dataLoading = true;
-            //console.log(vm.user);
+            console.log(vm.user);
+            if(vm.user.password.length < 5) {
+                FlashService.Error("Enter password with length 5 char.");
+                vm.dataLoading = false;
+            }
             UserService.Create(vm.user)
                 .then(function (response) {
 

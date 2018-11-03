@@ -15,6 +15,7 @@
         service.Create = Create;
         service.Update = Update;
         service.Delete = Delete;
+        service.UpdateValue = UpdateValue;
 
         return service;
 
@@ -27,12 +28,11 @@
         }
 
         function GetByUsername(username) {
-            console.log("GetByUsername: " + username);
             return $http.get('/api/users?username=' + username).then(handleSuccess, handleError('Error getting user by username'));
         }
 
         function Create(user) {
-            return $http.post('/api/users', user).then(handleSuccess, handleError('Error creating user'));
+            return $http.post('/api/users', user).then(handleSuccess, handleError('Error creating user, use another username.'));
         }
 
         function Update(user) {
@@ -41,6 +41,11 @@
 
         function Delete(id) {
             return $http.delete('/api/users/' + id).then(handleSuccess, handleError('Error deleting user'));
+        }
+
+        function UpdateValue(user) {
+        console.log(user);
+            return $http.post('/api/users/values', user).then(handleSuccess, handleError('Error updating value'));
         }
 
         // private functions
