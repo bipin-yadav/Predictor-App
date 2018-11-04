@@ -12,6 +12,7 @@
             <ul class="nav navbar-nav">
                 <li ><a href="/">Dashboard</a></li>
                 <li class="active"><a href="#!/home">Home</a></li>
+                <li ><a href="#!/result">Winners of the Day</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="#!/login">Logout</a></li>
@@ -20,23 +21,33 @@
         </div>
     </div>
 </nav>
+
 <h1>Hi {{username}}!</h1>
+<div class="container">
+    <div class="panel">
+        <div class="panel-heading border">
     <h2>
-        Day: {{fixedPrediction.date}} Nov, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        Day: {{fixedPrediction.date}} Nov, &nbsp;&nbsp;&nbsp;&nbsp;
         Prediction: {{fixedPrediction.value}}
     </h2>
     <h3>You can update your value here:</h3>
     <form name="form" ng-submit="vm.updateValue()" role="form">
         <div class="form-group" ng-class="{ 'has-error': form.myValue.$dirty && form.myValue.$error.required }">
-            <input type="text" name="myValue" id="myValue" class="form-control" ng-model="vm.user.myValue" required />
+            <input placeholder="guess value ?" style="width: 20%;" type="number" name="myValue" id="myValue"
+                   class="form-control" ng-model="vm.user.myValue" required />
             <span ng-show="form.myValue.$dirty && form.myValue.$error.required" class="help-block">Value is required</span>
+            <span class="error" ng-show="form.myValue.$dirty && form.myValue.$error.number">
+      Not valid number!</span>
         </div>
         <div class="form-actions">
             <button type="submit" ng-disabled="form.$invalid || vm.dataLoading" class="btn btn-primary">Update</button>
             <img ng-if="vm.dataLoading" src="data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAkKAAAALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA==" />
             </br>
-            <span>You have updated {{attempt}} times for current day!</span>
+            <span>You have updated, 0{{attempt}} times!</span>
         </div>
     </form>
-
 <p>&nbsp;</p>
+        </div>
+    </div>
+</div>
+

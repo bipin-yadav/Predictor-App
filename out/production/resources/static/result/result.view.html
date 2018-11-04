@@ -22,3 +22,42 @@
     </div>
 </nav>
 <h1> Winners by Days! </h1>
+<div class="container">
+    <div class="panel">
+        <div class="panel-body">
+            <table class="table table-bordered bordered table-striped table-condensed datatable"
+                   ui-jq="dataTable" ui-options="dataTableOpt">
+                <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Date</th>
+                    <th>Value</th>
+                    <th>User Details</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr ng-repeat="n in fixedPredictions">
+                    <td>{{$index+1}}</td>
+                    <td>{{n.date}} Nov</td>
+                    <td>{{n.value}}</td>
+                    <td>
+                        <table >
+                            <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Details</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr ng-repeat="x in n.names">
+                                <td>{{$index+1}}</td>
+                                <td>{{x}}</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

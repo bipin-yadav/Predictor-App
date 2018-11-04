@@ -5,16 +5,38 @@
         .module('app')
         .controller('DashboardController', DashboardController);
 
-    DashboardController.$inject = ['$rootScope'];
-    function DashboardController($rootScope) {
-            var vm = this;
+    DashboardController.$inject = ['UserService', '$location', '$rootScope', 'FlashService', '$scope'];
+    function DashboardController(UserService, $location, $rootScope, FlashService, $scope) {
+        var vm = this;
 
-            initController();
+        $scope.username = null;
+        $scope.fixedPrediction = null;
+        $scope.data = loadAllPrediction;
 
-            function initController() {
-               console.log("load data here, for the day.");
-            }
+        initController();
 
+        function initController() {
+            loadFixedPrediction();
+            loadAllPrediction();
+        }
+
+        function loadFixedPrediction() {
+            UserService.GetFixedPredictionsByDate("17")
+                .then(function (fixedPrediction) {
+                    console.log(fixedPrediction);
+                    $scope.fixedPrediction = fixedPrediction;
+                });
+        }
+
+        function loadAllPrediction() {
+            UserService.GetAllUserPredictionsByDate("17")
+                .then(function (result) {
+                    console.log(result);
+                    $scope.data = result
+                    console.log($scope.data);
+                });
+
+        }
     }
 
 })();

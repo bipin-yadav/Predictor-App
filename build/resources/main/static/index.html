@@ -4,6 +4,8 @@
     <meta charset="utf-8" />
     <title>Peak | Predictor</title>
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
+    <link rel='stylesheet' href='https://cdn.datatables.net/1.10.12/css/dataTables.bootstrap.min.css'>
+
     <link href="app.css" rel="stylesheet" />
 </head>
 <body>
@@ -11,7 +13,7 @@
     <div class="jumbotron">
         <div class="container">
             <div class="row">
-            <div class="col-sm-8 col-md-6 col-sm-offset-2">
+            <div>
                 <div ng-class="{ 'alert': flash, 'alert-success': flash.type === 'success', 'alert-danger': flash.type === 'error' }"
                      ng-if="flash" ng-bind="flash.message"></div>
                 <div ng-view></div>
@@ -24,7 +26,9 @@
     <script src="//code.angularjs.org/1.6.0/angular.min.js"></script>
     <script src="//code.angularjs.org/1.6.0/angular-route.min.js"></script>
     <script src="//code.angularjs.org/1.6.0/angular-cookies.min.js"></script>
-    
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.0.0/ui-bootstrap-tpls.min.js'></script>
+
     <script src="app.js"></script>
     <script src="authentication.service.js"></script>
     <script src="flash.service.js"></script>
@@ -33,6 +37,8 @@
     <script src="user.service.js"></script>
 
     <script src="home/home.controller.js"></script>
+    <script src="dashboard/dashboard.controller.js"></script>
+    <script src="result/result.controller.js"></script>
     <script src="login/login.controller.js"></script>
     <script src="register/register.controller.js"></script>
 </body>

@@ -14,4 +14,6 @@ public class FixedPrediction implements Serializable {
   private String date;
 
   private String value;
+
+  private String finalValue;
 }

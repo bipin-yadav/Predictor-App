@@ -14,12 +14,15 @@
         $scope.attempt = 0;
         $scope.fixedPrediction = null;
         vm.updateValue = updateValue;
+        $scope.isLoading = true;
 
         initController();
 
         function initController() {
+            $scope.isLoading = true;
             loadCurrentUser();
             loadFixedPrediction();
+            $scope.isLoading = false;
         }
 
         function loadFixedPrediction() {

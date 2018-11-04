@@ -16,6 +16,14 @@
         service.Update = Update;
         service.Delete = Delete;
         service.UpdateValue = UpdateValue;
+        service.GetAllFixedPredictions = GetAllFixedPredictions;
+        service.GetFixedPredictionsByDate = GetFixedPredictionsByDate;
+        service.CreateFixedPredictions = CreateFixedPredictions;
+        service.DeleteFixedPredictions = DeleteFixedPredictions;
+        service.CreateUserPredictions = CreateUserPredictions;
+        service.GetUserPredictionsByUserName = GetUserPredictionsByUserName;
+        service.GetAllUserPredictionsByDate = GetAllUserPredictionsByDate;
+        service.GetResult = GetResult;
 
         return service;
 
@@ -47,6 +55,40 @@
         console.log(user);
             return $http.post('/api/users/values', user).then(handleSuccess, handleError('Error updating value'));
         }
+
+        function GetAllFixedPredictions() {
+            return $http.get('/api/fixed/predictions').then(handleSuccess, handleError('Error getting all info.'));
+        }
+
+        function GetFixedPredictionsByDate(date) {
+            return $http.get('/api/fixed/predictions?date=' + date).then(handleSuccess, handleError('Error getting details by id.'));
+        }
+
+        function CreateFixedPredictions(userprediction) {
+            return $http.post('/api/fixed/predictions', userprediction).then(handleSuccess,
+            handleError('Error updating value, u are exceeding the update limit.'));
+        }
+
+        function DeleteFixedPredictions(date) {
+            return $http.delete('/api/fixed/predictions?date=' + date).then(handleSuccess, handleError('Error deleting'));
+        }
+
+                function CreateUserPredictions(userprediction) {
+                    return $http.post('/api/user/predictions', userprediction).then(handleSuccess, handleError('Error updating value, pls try later.'));
+                }
+
+        function GetUserPredictionsByUserName(userName) {
+            return $http.get('/api/user/predictions?username=' + userName).then(handleSuccess, handleError('Error getting details by id.'));
+        }
+
+        function GetAllUserPredictionsByDate(date) {
+            return $http.get('/api/user/predictions/all?date=' + date).then(handleSuccess, handleError('Error getting details by id.'));
+        }
+
+        function GetResult() {
+            return $http.get('/api/user/predictions/result').then(handleSuccess, handleError('Error getting results.'));
+        }
+
 
         // private functions
 

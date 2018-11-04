@@ -22,3 +22,32 @@
     </div>
 </nav>
 <h1>DashBoard</h1>
+<div class="container">
+<div class="panel">
+<div class="panel-heading border">
+    <h2>Data table for </br>
+        Day: {{fixedPrediction.date}} Nov, Prediction: {{fixedPrediction.value}}
+    </h2>
+</div>
+<div class="panel-body">
+    <table class="table table-bordered bordered table-striped table-condensed datatable">
+        <thead>
+        <tr>
+            <th>#</th>
+            <th>UserName</th>
+            <th>Value</th>
+            <th>Attempt</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="n in data">
+            <td>{{$index+1}}</td>
+            <td>{{n.username}}</td>
+            <td>{{n.value}}</td>
+            <td>{{n.attempt}}</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</div>
+</div>

@@ -5,15 +5,28 @@
         .module('app')
         .controller('ResultController', ResultController);
 
-    ResultController.$inject = ['$rootScope'];
-    function ResultController($rootScope) {
-            var vm = this;
+    ResultController.$inject = ['UserService', '$location', '$rootScope', 'FlashService', '$scope'];
+    function ResultController(UserService, $location, $rootScope, FlashService, $scope) {
+        var vm = this;
 
-            initController();
+        $scope.fixedPredictions = null;
 
-            function initController() {
-               console.log("Result data here, by day.");
-            }
+//var obj = JSON.parse('[{"date":"17","value":"50","finalValue":"45","names":["Name:bipni,UserName:bipin,Value:23,Attempts:1","Name:trest,UserName:test,Value:34,Attempts:1","Name:tres2t,UserName:test,Value:34,Attempts:1","Name:tre4t,UserName:test,Value:34,Attempts:1"]}]');
+
+        initController();
+
+        function initController() {
+            loadFixedPrediction();
+        }
+
+        function loadFixedPrediction() {
+            UserService.GetResult()
+                .then(function (fixedPredictions) {
+                    console.log(fixedPredictions);
+                    $scope.fixedPredictions = fixedPredictions;
+                });
+                //$scope.fixedPredictions = obj;
+        }
 
     }
 

@@ -22,6 +22,8 @@
         service.DeleteFixedPredictions = DeleteFixedPredictions;
         service.CreateUserPredictions = CreateUserPredictions;
         service.GetUserPredictionsByUserName = GetUserPredictionsByUserName;
+        service.GetAllUserPredictionsByDate = GetAllUserPredictionsByDate;
+        service.GetResult = GetResult;
 
         return service;
 
@@ -77,6 +79,14 @@
 
         function GetUserPredictionsByUserName(userName) {
             return $http.get('/api/user/predictions?username=' + userName).then(handleSuccess, handleError('Error getting details by id.'));
+        }
+
+        function GetAllUserPredictionsByDate(date) {
+            return $http.get('/api/user/predictions/all?date=' + date).then(handleSuccess, handleError('Error getting details by id.'));
+        }
+
+        function GetResult() {
+            return $http.get('/api/user/predictions/result').then(handleSuccess, handleError('Error getting results.'));
         }
 
 
