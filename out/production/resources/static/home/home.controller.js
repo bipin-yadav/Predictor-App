@@ -34,7 +34,8 @@
         }
 
         function loadCurrentUser() {
-            UserService.GetUserPredictionsByUserName($rootScope.globals.currentUser.username)
+            UserService.GetUserPredictionsByUserName(
+            $rootScope.globals.currentUser.username, "17")
                 .then(function (user) {
                     console.log(user);
                     $scope.user = user;

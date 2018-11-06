@@ -6,7 +6,6 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -16,9 +15,16 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Map;
 import java.util.Optional;
+import java.util.Set;
+import java.util.SortedMap;
+import java.util.TreeMap;
+import java.util.stream.Collectors;
 
 @RestController
 @Slf4j
@@ -164,12 +170,22 @@ public class UserApiController {
 		Optional<FixedPrediction> byId = fixedPredictionRepository.findById(date);
 		if(byId.isPresent()) {
 			FixedPrediction fixedPrediction = byId.get();
-			List<UserPrediction> userPredictionRepositoryAll = (List<UserPrediction>) userPredictionRepository.findAll();
+			//all predictions.
+			List<UserPrediction> userPredictionRepositoryAll
+					= (List<UserPrediction>) userPredictionRepository.findAll();
+			//get for particular date.
+			List<UserPrediction> userPredictions = userPredictionRepositoryAll.stream()
+					.filter(userPrediction -> userPrediction.getDate().equals(date))
+					.collect(Collectors.toList());
+			// get winners.
+			List<UserPrediction> winners = getWinnersList(userPredictions, fixedPrediction);
+			//create details.
+			List<String> names = findListOfWinners(winners);
+
 			Result result = new Result();
 			result.setDate(fixedPrediction.getDate());
 			result.setValue(fixedPrediction.getValue());
 			result.setFinalValue(fixedPrediction.getFinalValue());
-			List<String> names = findListOfWinners(userPredictionRepositoryAll, fixedPrediction);
 			result.setNames(names);
 			resultRepository.save(result);
 			return new ResponseEntity(HttpStatus.CREATED);
@@ -177,12 +193,55 @@ public class UserApiController {
 		return new ResponseEntity(HttpStatus.BAD_REQUEST);
 	}
 
-	private List<String> findListOfWinners(List<UserPrediction> userPredictions, FixedPrediction fixedPrediction) {
-		List<String> stringList = new ArrayList<>();
-		String finalValue = fixedPrediction.getFinalValue();
+	public List<UserPrediction> getWinnersList(List<UserPrediction> userPredictions,
+																							FixedPrediction fixedPrediction) {
+		List<UserPrediction> winners = new ArrayList<>();
+		BigDecimal finalValue = new BigDecimal(fixedPrediction.getFinalValue());
+		SortedMap<String, BigDecimal> stringBigDecimalMap = new TreeMap<>();
+		for (UserPrediction userPrediction: userPredictions) {
+			BigDecimal userValue = new BigDecimal(userPrediction.getValue());
+			BigDecimal difference = finalValue.subtract(userValue).abs() ;
+			stringBigDecimalMap.put(userPrediction.getUsername(), difference);
+		}
 
+		Set<Map.Entry<String, BigDecimal>> set = stringBigDecimalMap.entrySet();
+		List<Map.Entry<String, BigDecimal>> list = new ArrayList<Map.Entry<String, BigDecimal>>(set);
+		Collections.sort(list, new Comparator<Map.Entry<String, BigDecimal>>() {
+			public int compare(Map.Entry<String, BigDecimal> o1,
+												 Map.Entry<String, BigDecimal> o2) {
+				return o2.getValue().compareTo(o1.getValue());
+			}
+		});
+
+		for (Map.Entry<String, BigDecimal> entry : list) {
+			System.out.println(entry.getKey()  + "  " + entry.getValue());
+		}
+
+		if(list.size() <= 3) {
+			return userPredictions;
+		} else {
+			for(int i=list.size()-1; i > list.size()-4; i--) {
+				String key = list.get(i).getKey();
+				UserPrediction userPredictionObjectByUsername = getUserPredictionObjectByUsername(userPredictions, key);
+				winners.add(userPredictionObjectByUsername);
+			}
+		}
+
+		return winners;
+	}
+
+	private UserPrediction getUserPredictionObjectByUsername(List<UserPrediction> userPredictions, String key) {
 		for (UserPrediction userPrediction : userPredictions) {
-			// logic for all winners
+			if (key.equals(userPrediction.getUsername())) {
+				return userPrediction;
+			}
+		}
+		return null;
+	}
+
+	private List<String> findListOfWinners(List<UserPrediction> userPredictions) {
+		List<String> stringList = new ArrayList<>();
+		for (UserPrediction userPrediction : userPredictions) {
 			String username = userPrediction.getUsername();
 			Optional<User> byId = userRepository.findById(username);
 			if(byId.isPresent()) {

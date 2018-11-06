@@ -2,32 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cfc62b7a-f435-4cea-bced-b9c3df071092" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_mockito_mockito_core_1_10_19.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_objenesis_objenesis_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/peak/predictor/UserApiControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.8.1/fileContent/annotation-processors.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8.1/fileContent/annotation-processors.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.8.1/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8.1/fileContent/fileContent.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.8.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.8.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.8.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.8.1/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8.1/taskHistory/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.8.1/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8.1/taskHistory/taskHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__net_bytebuddy_byte_buddy_agent_1_9_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_mockito_mockito_core_2_23_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_objenesis_objenesis_2_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/demo_main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/demo_main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/demo_test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/demo_test.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/peak/predictor/FixedPrediction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/peak/predictor/FixedPrediction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/peak/predictor/UserApiController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/peak/predictor/UserApiController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/demo-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/demo-0.0.1-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/com/peak/predictor/UserApiController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/peak/predictor/UserApiController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/peak/predictor/UserPrediction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/peak/predictor/UserPrediction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/static/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/static/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/static/dashboard/dashboard.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/static/dashboard/dashboard.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/static/dashboard/dashboard.view.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/static/dashboard/dashboard.view.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/resources/static/home/home.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/static/home/home.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/static/home/home.view.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/static/home/home.view.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/static/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/static/result/result.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/static/result/result.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/static/result/result.view.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/static/result/result.view.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/resources/static/user.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/static/user.service.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/peak/predictor/FixedPrediction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/peak/predictor/FixedPrediction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/peak/predictor/UserApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/peak/predictor/UserApiController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/peak/predictor/UserPrediction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/peak/predictor/UserPrediction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/peak/predictor/UserPredictionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/peak/predictor/UserPredictionRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/dashboard/dashboard.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/dashboard/dashboard.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/dashboard/dashboard.view.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/dashboard/dashboard.view.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/home/home.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/home/home.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/home/home.view.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/home/home.view.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/result/result.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/result/result.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/result/result.view.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/result/result.view.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/user.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/user.service.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -69,63 +68,33 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="UserPrediction.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/peak/predictor/UserPrediction.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserPredictionRepository.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/peak/predictor/UserPredictionRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="87" selection-start-line="4" selection-start-column="87" selection-end-line="4" selection-end-column="87" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserId.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/peak/predictor/UserId.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="result.view.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/static/result/result.view.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="111">
-              <caret line="43" column="31" selection-start-line="43" selection-start-column="31" selection-end-line="43" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserApiController.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="UserApiController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/peak/predictor/UserApiController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="124">
-              <caret line="91" column="17" selection-start-line="91" selection-start-column="11" selection-end-line="91" selection-end-column="17" />
+            <state relative-caret-position="-489">
+              <caret line="122" column="90" selection-start-line="122" selection-start-column="90" selection-end-line="122" selection-end-column="90" />
               <folding>
-                <element signature="e#2225#2226#0" expanded="true" />
-                <element signature="e#2263#2264#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#8385#8416#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
+      <file leaf-file-name="home.controller.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/home/home.controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="12" lean-forward="true" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+            <state relative-caret-position="343">
+              <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="user.service.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/user.service.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="401">
+              <caret line="79" column="54" selection-start-line="79" selection-start-column="54" selection-end-line="79" selection-end-column="54" />
             </state>
           </provider>
         </entry>
@@ -136,6 +105,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -384,9 +354,9 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="6164522703000" />
+        <entry key="$PROJECT_DIR$" value="6164870989000" />
         <entry key="$PROJECT_DIR$/.gradle" value="0" />
-        <entry key="$PROJECT_DIR$/build.gradle" value="2992150327" />
+        <entry key="$PROJECT_DIR$/build.gradle" value="290741642" />
         <entry key="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" value="2077093676" />
         <entry key="$PROJECT_DIR$/settings.gradle" value="4103014672" />
       </map>
@@ -630,7 +600,6 @@
         <option value="$PROJECT_DIR$/src/main/resources/static/home.service.js" />
         <option value="$PROJECT_DIR$/src/main/java/com/peak/predictor/FixedPredictionController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/static/authentication.service.js" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/home/home.controller.js" />
         <option value="$PROJECT_DIR$/src/main/resources/static/app.css" />
         <option value="$PROJECT_DIR$/src/main/resources/static/app.js" />
         <option value="$PROJECT_DIR$/src/main/resources/static/home/home.view.html" />
@@ -640,14 +609,18 @@
         <option value="$PROJECT_DIR$/src/main/java/com/peak/predictor/FixedPrediction.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/peak/predictor/Result.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/peak/predictor/ResultRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/user.service.js" />
         <option value="$PROJECT_DIR$/src/main/resources/static/result/result.controller.js" />
         <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/src/main/java/com/peak/predictor/UserId.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/peak/predictor/UserPredictionRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/peak/predictor/UserPrediction.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/peak/predictor/UserApiController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/static/result/result.view.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/peak/predictor/UserApiControllerTest.groovy" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/main/java/com/peak/predictor/UserApiControllerTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/peak/predictor/UserApiController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/home/home.controller.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/user.service.js" />
       </list>
     </option>
   </component>
@@ -662,17 +635,15 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="Predictor-App" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Predictor-App" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="build" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="demo" type="b2602c69:ProjectViewProjectNode" />
@@ -722,36 +693,19 @@
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="dashboard" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Predictor-App" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
               <item name="home" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Predictor-App" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="result" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Groovy JUnit" value="groovy.util.GroovyTestCase" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="create.test.in.the.same.root" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/build.gradle" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
@@ -759,6 +713,13 @@
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.peak.predictor" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+      <recent name="groovy.util.GroovyTestCase" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/static/result" />
       <recent name="$PROJECT_DIR$/src/main/resources/static" />
@@ -776,7 +737,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Application">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.peak.predictor.Application" />
       <module name="demo_main" />
@@ -790,6 +751,29 @@
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="UserApiControllerTest.testCreateResult" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo_main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.peak.predictor.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.peak.predictor" />
+      <option name="MAIN_CLASS_NAME" value="com.peak.predictor.UserApiControllerTest" />
+      <option name="METHOD_NAME" value="testCreateResult" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -829,9 +813,14 @@
       <properties />
       <listeners />
     </configuration>
+    <list>
+      <item itemvalue="Application.Application" />
+      <item itemvalue="JUnit.UserApiControllerTest.testCreateResult" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Application" />
+        <item itemvalue="JUnit.UserApiControllerTest.testCreateResult" />
       </list>
     </recent_temporary>
   </component>
@@ -848,6 +837,38 @@
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="UserApiControllerTest_testCreateResult - 2018.11.06 at 23h 41m 16s.xml">
+      <configuration name="UserApiControllerTest.testCreateResult" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserApiControllerTest_testCreateResult - 2018.11.06 at 23h 43m 01s.xml">
+      <configuration name="UserApiControllerTest.testCreateResult" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserApiControllerTest_testCreateResult - 2018.11.06 at 23h 57m 22s.xml">
+      <configuration name="UserApiControllerTest.testCreateResult" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserApiControllerTest_testCreateResult - 2018.11.06 at 23h 58m 49s.xml">
+      <configuration name="UserApiControllerTest.testCreateResult" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserApiControllerTest_testCreateResult - 2018.11.06 at 23h 59m 13s.xml">
+      <configuration name="UserApiControllerTest.testCreateResult" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserApiControllerTest_testCreateResult - 2018.11.07 at 00h 03m 41s.xml">
+      <configuration name="UserApiControllerTest.testCreateResult" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserApiControllerTest_testCreateResult - 2018.11.07 at 00h 33m 44s.xml">
+      <configuration name="UserApiControllerTest.testCreateResult" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserApiControllerTest_testCreateResult - 2018.11.07 at 00h 34m 47s.xml">
+      <configuration name="UserApiControllerTest.testCreateResult" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserApiControllerTest_testCreateResult - 2018.11.07 at 00h 34m 58s.xml">
+      <configuration name="UserApiControllerTest.testCreateResult" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserApiControllerTest_testCreateResult - 2018.11.07 at 00h 36m 14s.xml">
+      <configuration name="UserApiControllerTest.testCreateResult" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="ToolWindowManager">
     <frame x="7" y="23" width="1640" height="955" extended-state="0" />
     <editor active="true" />
@@ -862,16 +883,17 @@
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.34498835" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.6130536" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.8041958" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.516317" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25625" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.259375" />
+      <window_info anchor="bottom" id="Build" order="7" weight="0.32983682" />
       <window_info anchor="right" id="Gradle" order="3" weight="0.165" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.37995338" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.37995338" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" id="Coverage" order="3" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -879,7 +901,6 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Build" order="7" weight="0.32983682" />
       <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
@@ -888,10 +909,41 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="8" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/peak/predictor/UserApiController.java</url>
+          <line>197</line>
+          <properties />
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/peak/predictor/UserApiController.java</url>
+          <line>229</line>
+          <properties />
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/peak/predictor/UserApiController.java</url>
+          <line>166</line>
+          <properties />
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="14" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/peak/predictor/UserApiController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2520">
+          <caret line="193" column="56" lean-forward="true" selection-start-line="193" selection-start-column="56" selection-end-line="193" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#8385#8416#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/peak/predictor/UserPrediction.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -914,8 +966,8 @@
         <state relative-caret-position="615">
           <caret line="61" column="3" selection-start-line="61" selection-start-column="3" selection-end-line="61" selection-end-column="3" />
           <folding>
-            <element signature="e#2225#2226#0" expanded="true" />
-            <element signature="e#2263#2264#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#8385#8416#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -946,8 +998,8 @@
         <state relative-caret-position="1410">
           <caret line="110" column="114" lean-forward="true" selection-start-line="110" selection-start-column="114" selection-end-line="110" selection-end-column="114" />
           <folding>
-            <element signature="e#2225#2226#0" expanded="true" />
-            <element signature="e#2263#2264#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#8385#8416#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1025,13 +1077,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/home/home.controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="507">
-          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/dashboard/dashboard.controller.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-21">
@@ -1064,13 +1109,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="33" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/user.service.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="90" lean-forward="true" selection-start-line="90" selection-end-line="90" />
         </state>
       </provider>
     </entry>
@@ -1136,17 +1174,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/peak/predictor/UserApiController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="91" column="17" selection-start-line="91" selection-start-column="11" selection-end-line="91" selection-end-column="17" />
-          <folding>
-            <element signature="e#2225#2226#0" expanded="true" />
-            <element signature="e#2263#2264#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/peak/predictor/UserId.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -1159,8 +1186,68 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/result/result.view.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="43" column="31" selection-start-line="43" selection-start-column="31" selection-end-line="43" selection-end-column="31" />
+        <state relative-caret-position="497">
+          <caret line="48" column="33" lean-forward="true" selection-start-line="48" selection-start-column="33" selection-end-line="48" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/peak/predictor/UserApiControllerTest.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="5" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="39" column="11" selection-start-line="39" selection-start-column="11" selection-end-line="39" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/src.zip!/java/math/BigDecimal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="2113" column="22" selection-start-line="2113" selection-start-column="22" selection-end-line="2113" selection-end-column="22" />
+          <folding>
+            <element signature="e#90031#90032#0" expanded="true" />
+            <element signature="e#90086#90087#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/peak/predictor/UserApiControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="41" selection-start-line="41" selection-end-line="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/home/home.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/user.service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="401">
+          <caret line="79" column="54" selection-start-line="79" selection-start-column="54" selection-end-line="79" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/peak/predictor/UserApiController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-489">
+          <caret line="122" column="90" selection-start-line="122" selection-start-column="90" selection-end-line="122" selection-end-column="90" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#8385#8416#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

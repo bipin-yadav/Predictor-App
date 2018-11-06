@@ -77,8 +77,9 @@
                     return $http.post('/api/user/predictions', userprediction).then(handleSuccess, handleError('Error updating value, pls try later.'));
                 }
 
-        function GetUserPredictionsByUserName(userName) {
-            return $http.get('/api/user/predictions?username=' + userName).then(handleSuccess, handleError('Error getting details by id.'));
+        function GetUserPredictionsByUserName(username, date) {
+            return $http.get('/api/user/predictions?username=' + username + '&date=' + date).then(handleSuccess,
+            handleError('Error getting details by id.'));
         }
 
         function GetAllUserPredictionsByDate(date) {
